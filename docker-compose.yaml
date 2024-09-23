@@ -2,6 +2,7 @@ services:
   app:
     image: samuraixheart/moonbix-app:latest
     volumes:
-      - .:/usr/app
+      - ./data.txt:/usr/app/data.txt
+      - ./proxy.txt:/usr/app/proxy.txt
     environment:
       - PYTHONUNBUFFERED=1
