@@ -1,0 +1,7 @@
+services:
+  app:
+    image: samuraixheart/moonbix-app:latest
+    volumes:
+      - .:/usr/app
+    environment:
+      - PYTHONUNBUFFERED=1
